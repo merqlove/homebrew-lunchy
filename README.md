@@ -1,17 +1,17 @@
-Homebrew-Do-Snapshot
+Homebrew-Lunchy
 ====================
-This formula has [DoSnapshot](http://github.com/merqlove/do_snapshot) CLI, which is helpful tool to automate snapshotting of your Digital Ocean droplets. 
+This formula has [Lunchy](http://github.com/eddiezane/lunchy). A friendly wrapper for launchctl. Start your agents and go to lunch! 
 
 How do I install this formula?
 --------------------------------
-Just `brew tap merqlove/do-snapshot` and then `brew install do_snapshot`.
+Just `brew tap merqlove/lunchy` and then `brew install lunchy`.
 
-If the formula conflicts with one from mxcl/master or another tap, you can `brew install merqlove/do-snapshot/do_snapshot`.
+If the formula conflicts with one from mxcl/master or another tap, you can `brew install merqlove/lunchy/lunchy`.
 
 You can also install via URL:
 
 ```
-brew install https://raw.github.com/merqlove/homebrew-do-snapshot/master/do_snapshot.rb
+brew install https://raw.github.com/merqlove/homebrew-lunchy/master/lunchy.rb
 ```
 
 Docs

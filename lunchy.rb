@@ -23,29 +23,29 @@ class Ruby19 < Requirement # rubocop:disable Style/Documentation
   end
 
   def message; <<-EOS.undent
-    DoSnapshot requires Ruby >= 1.9.3
+    Lunchy requires Ruby >= 1.9.3
   EOS
   end
 end
 
-class DoSnapshot < Formula # rubocop:disable Style/Documentation
-  homepage 'https://dosnapshot.merqlove.ru/'
-  url 'http://assets.merqlove.ru.s3.amazonaws.com/do_snapshot/do_snapshot-0.0.11.tgz'
+class Lunchy < Formula # rubocop:disable Style/Documentation
+  homepage 'https://github.com/eddiezane/lunchy/'
+  url 'http://assets.merqlove.ru.s3.amazonaws.com/lunchy/lunchy-0.8.0.tgz'
   sha256 '00d54f8a773e34454242515a862f5eb8a88380f1855db08627689dce06a66752'
 
   depends_on Ruby19
 
   def install
     libexec.install Dir['*']
-    bin.write_exec_script libexec / 'bin/do_snapshot'
+    bin.write_exec_script libexec / 'bin/lunchy'
   end
 
   test do
-    system "#{bin}/do_snapshot", 'version'
+    system "#{bin}/lunchy", 'ls'
   end
 
   def caveats; <<-EOS.undent
-    do_snapshot requires an installation of Ruby 1.9.3 or greater.
+    lunchy requires an installation of Ruby 1.9.3 or greater.
   EOS
   end
 end
