@@ -31,7 +31,7 @@ end
 class Lunchy < Formula # rubocop:disable Style/Documentation
   homepage 'https://github.com/eddiezane/lunchy/'
   url 'http://assets.merqlove.ru.s3.amazonaws.com/lunchy/lunchy-0.8.0.tgz'
-  sha256 '00d54f8a773e34454242515a862f5eb8a88380f1855db08627689dce06a66752'
+  sha256 '2a4e144c129f15092e5d6fe67d4b75249429e7ef3cb82f51bdf6163d4b032d0f'
 
   depends_on Ruby19
 
